@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /* global variable */
+        :root{
+            --color:blue;
+            --seccolor:rgba(145, 195, 225, 0.608);
+            --defpad:23px;
+            --defop:0.5;
+
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav{
+            background-color:var(--color);
+        }
+
+        ul{
+            display:flex;
+        }
+
+        ul li{
+            list-style-type:none;
+            /* padding: 34px; */
+            padding: var(--defpad);
+            border: 5px solid var(--seccolor);
+            opacity:var(--defop);
+        }
+
+        ul li:first-child{
+            /* local variable */
+             --color:rgb(0, 255, 68);
+            background-color:var(--color, rgb(231, 68, 163));
+        }
+        .container{
+            background-color:var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+    </div>
+            <div class="container">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias totam minima quam deserunt nulla, laborum temporibus. Architecto illo nesciunt placeat porro, optio obcaecati consectetur. Incidunt deserunt, exercitationem consequuntur magnam doloremque ipsum similique cupiditate possimus.
+            </div>
+        </ul>
+    
+</body>
+</html>
+
+<!-- css variables can hold colors,values,strings, nos
+when we want to give a thing to many things like color to many places we use variables just like c,c++ -->
