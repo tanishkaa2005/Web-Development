@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center;  */
+            align-items: center;  
+            /* flex-direction: column; */
+            /* flex-wrap: wrap; */
+            /* align-content: flex-start; */
+            /* flex-flow:row wrap ; */
+            /* gap: 5px; */
+            /* row-gap: 15px;
+            column-gap: 15px; */
+            gap:10px 30px ;
+        }
+
+        .item{
+            height: 70px;
+            width: 70px;
+            background-color: purple;
+            /* margin: 4px; */
+            border:2px solid black; 
+            /* flex-grow: 1; */ 
+
+        }
+
+        .order-1{
+            order:1;
+        }
+
+         .order-2{
+            order:2;
+        }
+
+        .order-3{
+            order:3;
+        }
+         
+            .item1{
+                /* flex-grow: 2; */
+                /* flex-shrink:2 ; */
+                align-self:flex-end ;
+            }
+
+
+    </style>
+</head>
+<body>
+        <main>
+            <div class="container">
+                <div class="item item1">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item order-1">5</div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item order-1">66</div>
+                <div class="item"></div>
+                <div class="item"></div>
+                
+              
+                
+            </div>
+        </main>
+</body>
+</html>
+
+<!-- 
+all these are applied in the container
+justify-content: center; it centers from left and right
+
+align-items: center; it centers from top and bottom
+it can also be flex left ,flex right
+
+
+flex direction default left to right
+
+flex-direction:column; it displays in column
+and column reverse   it reverses
+
+same is for row
+
+cross axis and main axis
+in flex-direction:column  main axis is vertical and cross axis is horizontal
+
+in flex-direction:row  main axis is horizontal and cross axis is vertical
+
+flex-wrap: wrap;  it gets the content is next line
+wrap-reverse    it gets wrap reverse 
+
+
+align-content: center; it gets multiple lines in center
+it can also be flex left ,flex right
+
+flex-flow=flex direction   flex wrap ;  it 
+it can be done in coloumn,coloumn-reverse,row,row-reverse
+
+gap:5px;           it gives gap between items
+
+gap: 5px 10px;     row   column
+
+.order-1{
+            order:1;
+        }
+order-1 means at last 
+jitna bada order uthna last meh aayga
+
+
+flex-grow:1;   it equally spaces the items
+2 it takes space of 2 items
+
+flex-shrink:2;  it shrinks the items 2toimes when necessary
+
+align-self:flex-end ;  it aligns the particular item
+
+
+
+
+
+no justify items in flexbox
+  -->
