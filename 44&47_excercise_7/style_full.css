@@ -1,0 +1,116 @@
+* {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: -20px;
+            
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            margin-left: 10px;
+            align-items: center;
+
+
+
+        }
+
+        ul li {
+            padding: 20px;
+
+        }
+
+
+
+
+
+
+
+        h1 {
+            text-align: center;
+           padding: 40px;
+        }
+
+        .para {
+            font-size: 23px;
+            padding: 30px;
+            width: 40vw;
+            text-align: center;
+            justify-self: center;
+            
+            
+        }
+        .bigbutt{
+            text-align: center;
+        }
+
+        .butt {
+            border-radius: 5px;
+            background-color: rgb(34, 219, 219);
+            border: none;
+            height: 40px;
+            padding: 20px;
+            margin: 30px;
+            color: white;
+            font-weight: bolder;
+
+
+        }
+
+        
+
+        
+
+
+
+        .container2 {
+            width: 100vw;
+            height: 50vh;
+            display: grid;
+            grid-template-rows: repeat(4, 200px);
+            grid-template-columns: repeat(3, 200px);
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .box {
+            background-color: rgb(239, 239, 239);
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            margin-top: 20px;
+            place-content: center;
+        }
+
+        .but {
+            height: 30px;
+            border-radius: 5px;
+            background-color: rgb(34, 219, 219);
+            border: none;
+
+        }
+
+        a {
+
+            color: white;
+            text-decoration: none;
+
+        }
+
+         @media screen and (max-width: 1000px){
+        .container2{
+            grid-template-columns: 1fr;
+            
+        }
+    }
+
+       
