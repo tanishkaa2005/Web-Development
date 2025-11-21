@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors-CSS</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+        /* .box::first-line{
+            color: yellow;
+        } */
+        
+        /* .boxes *{
+            color:blue;
+            border:2px solid black;
+
+        }
+
+        p, a, .box,[data-color="primary"]{
+            margin-top: 45px;
+            padding-top: 45px;
+        } */
+        
+        /* .box:nth-child(even){
+            background-color: pink;
+        } */
+
+        /* .box:nth-last-child(2){
+            background-color: green;
+        } */
+
+
+         /* PSEUDO ELEMENTS */
+
+        .boxes::before{
+            content:"tanishka raghuwanshi";
+            color:chocolate
+        }
+
+        .boxes::after{
+            content:"pune";
+            color:blueviolet
+        }
+        
+
+        ::selection{
+            color:pink;
+            background-color: blue;
+        }
+
+        .box::first-letter{
+            color:darkgreen;
+            font-size: 45px;
+        }
+        input::placeholder{
+            color:fuchsia;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="boxes">
+    <div  data-color="primary" class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, voluptatem? Animi mollitia molestias eaque iusto sit hic harum facilis, ipsum quae corrupti officia quasi modi placeat non ullam ducimus est quis pariatur sunt similique excepturi. Optio, quos. Reiciendis illo laboriosam distinctio eveniet, quisquam voluptatibus sunt?.</div>
+    <div class="box">Hey I am a Box</div>
+    <div class="box">Hey I am a Box</div>
+    <input type="text" placeholder="type your name here">
+   </div>
+    
+</body>
+</html>
+
+
+<!-- 
+.box is the first  child of parent so first-child places red on 1st 
+
+.box::first-line{
+    color: yellow;
+ it changes the color of first line to yellow
+
+ .boxes *{
+            color:blue;
+            border:2px solid black;
+
+        }
+
+it is used to give properties to all the text as *(universal)is used
+
+p, a, .box,[data-color="primary"]{
+    margin-top: 45px;
+    padding-top: 45px;
+} 
+
+it is used to give the properties to p tag,a tag and to all .box classes
+        
+.box:nth-child(even){
+    background-color: pink;
+} 
+
+it is used to give the properties to the even child in this the counting starts from 1
+
+ .box:nth-last-child(2){
+    background-color: green;
+} 
+
+it is used to give the properties to the last 2 child 
+
+
+ /* PSEUDO ELEMENTS */
+
+.boxes::before{
+    content:"tanishka raghuwanshi";
+    color:chocolate
+}
+
+it is used to insert content before the actual content of boxes class
+
+.boxes::after{
+    content:"pune";
+    color:blueviolet
+}
+
+it is used to insert content after the actual content of boxes class
+        
+
+::selection{
+    color:pink;
+    background-color: blue;
+}
+
+it is used to when you select some text so its text will come in pink and background in blue
+
+.box::first-letter{
+    color:darkgreen;
+    font-size: 45px;
+}
+it is used to give the properties to the first letter
+
+input::placeholder{
+    color:fuchsia;
+    font-size: 15px;
+    }
+it is used to give properties to the placeholder
+
+
+        }-->

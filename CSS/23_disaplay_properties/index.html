@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            border: 2px solid blue;
+            display: inline-block;
+            padding: 45px;  /* in inline elements the padding is not given from top*/
+            margin: 30px;
+            width:344px;/* if block is removed from the display then width is not set*/
+            /* display: none; */
+        }
+        .box1{
+            /* display: none; */
+            /* visibility: hidden; takes space but the content is not displayed */
+            display: inline-flex;  /* grid*/
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div is block and span is inline element -->
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">also a nice box</div>
+
+    <span>I am a good</span>
+    <span>span</span>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Float & Clear</title>
+    <style>
+        .cards{
+            border: 4px solid black;
+            /* display:flow-root; */
+        }
+        img {
+            float: left;
+        }
+        .card{
+            border:4px solid red;
+        }
+
+        .card:nth-child(3){
+            background-color: aqua;
+            clear:both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="https://plus.unsplash.com/premium_photo-1672146844153-9c269fba7bf2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGlsbHN8ZW58MHx8MHx8fDA%3D"
+            alt="" width="230px">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus qui saepe, necessitatibus officia
+                minus deleniti? Minima eveniet minus voluptatum aspernatur ex, nulla veritatis odio accusantium sit
+                ducimus! Commodi necessitatibus, reprehenderit pariatur asperiores at molestias.</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur doloremque veniam numquam, harum labore, inventore possimus excepturi fugiat distinctio ab iste deleniti temporibus minus quidem quas quis facilis fuga totam repellendus officia corrupti? Quis modi, accusamus asperiores id veniam saepe dolor placeat explicabo repudiandae dolore voluptatibus unde eaque aut sunt perferendis cumque rerum illo exercitationem rem. A consequatur debitis, alias libero pariatur ex. Necessitatibus fugit accusamus minima cupiditate corrupti quo blanditiis. Veniam iusto officiis deserunt numquam laudantium. Maxime rem voluptas iure enim alias repudiandae unde deleniti distinctio neque doloribus. Inventore voluptatum eligendi, repellat sit nostrum, explicabo nemo mollitia deleniti dolores, sequi officia! Ex explicabo rem placeat neque voluptatem exercitationem consequatur. Harum porro tenetur laudantium laborum nostrum commodi, ipsum provident, sed quaerat esse animi id! Maiores doloribus cumque autem porro voluptas ab expedita perferendis fugit, earum alias architecto asperiores suscipit atque, obcaecati eveniet quisquam similique incidunt ipsum saepe pariatur at vel! Saepe molestias sint distinctio deleniti nam, repellendus est omnis praesentium blanditiis ipsum veritatis architecto laboriosam pariatur ullam autem fuga voluptatem explicabo eum, eveniet aperiam modi dicta quasi dolore facilis! Mollitia facilis, distinctio eveniet error quos deleniti cum ipsa praesentium alias hic id omnis! Hic, veritatis vitae eum officiis iusto doloribus quos iste quam ab tenetur quod praesentium nostrum. Natus, pariatur esse. Iste vero laudantium quibusdam neque doloribus unde vel dolorem, aut corrupti quos! Quisquam at magni possimus eius sint cumque expedita nemo quidem suscipit! Modi iste quidem sapiente corrupti ratione non nobis nesciunt delectus, rerum minus optio alias id. Voluptate ratione doloribus dicta exercitationem, delectus, qui dolorem eos esse perferendis dolor recusandae! Esse, nihil error autem sit facere perspiciatis unde magnam dolore recusandae! Dolor consequuntur a ullam! Odit est quos dolorum incidunt eum sapiente. Officia ad commodi impedit quibusdam! Mollitia cumque minima, dolorum consequatur fugiat sit in odio, assumenda modi delectus natus eveniet. Officiis quaerat laudantium quidem doloremque atque voluptatem velit delectus facilis quo necessitatibus quos voluptatum perspiciatis, eligendi, et repellendus enim nemo id praesentium. Eveniet laborum eum dicta beatae vel nulla!</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+<!-- 
+don't use float and clear
+
+display:flow-root; 
+ it dosent overflow the image 
+ 
+ float: left;   it moves image to left and content adjacent to it
+ 
+.card:nth-child(3)
+3rd child of thr card
+ 
+clear:right     it clears anything from thr right
+ clear:both clears both left and right
+
+
+ 
+ 
+ 
+ -->

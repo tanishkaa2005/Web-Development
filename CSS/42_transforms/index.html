@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+            
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: bisque;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* transform: rotate(40deg); */
+        /* transform: rotate(0.5turn); */
+        /* transform: rotateX(80deg); */
+
+        /* transform: scale(1.6); */
+        /* transform: scaleX(1.5); */
+        /* transform: scale3d(); */
+
+        /* transform: skew(5deg); */
+        /* transform: skewY(50deg); */
+
+        /* transform: translateX(34px); */
+        /* transform: translateX(34%); */
+        /* transform: translateY(34px); */
+        /* transform: translateY(34%); */
+
+        /* transform: rotate(20deg) translateY(50%) translateX(-45%) ;
+        } */
+
+        transform: rotate(55deg);
+        transform-origin: -0% -0%;
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"> box</div>
+    </div>
+</body>
+</html>
+
+
+
+
+<!-- 
+transform is used mainly in navbar
+2D transform means x,y axis 
+3D transform means x,y,z axis
+
+transform: rotate(40deg);  rotates the box
+transform: rotate(0.5turn); turns the box in 180 degrees
+transform: rotateX(80deg);  rotates around x axis
+transform: rotateY(80deg);rotates around y axis
+transform: rotateZ(80deg);rotates around  zaxis
+
+scale means 1.6 times bigger
+transform: scale(1.6);
+transform: scaleX(1.5);  same for Y and Z axis
+transform: scale3d();   3D transformation is applied
+
+ransform: skew(5deg);
+transform: skewY(50deg); only applied on x,y axis not on z axis
+
+
+X moves to the right side and y moves downwards
+transform: translateX(34px); 
+transform: translateX(34%); 
+ transform: translateY(34px); 
+transform: translateY(34%); 
+
+transform-origin:-0% -0% ;  it rotates around the o,o axis
+-->
