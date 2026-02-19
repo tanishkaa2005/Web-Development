@@ -1,6 +1,0 @@
-console.log(age+g)
-// console.log(age-g)
-// console.log(age*g)
-// console.log(age/g)
-// console.log(age**g)
-// console.log(age%g)
